@@ -1,0 +1,179 @@
+#bouquet-options-wrap {  }
+.woo-plugin-label-checkbox {
+    text-transform: uppercase;
+    text-align: left;
+    color: #333 !important;
+    font-family: 'futura-pt';
+    font-weight: 500;
+    font-size: 16px;
+}
+#bouquet-options-wrap legend {
+    font-family: 'futura-pt';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3b2a71;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#bouquet-options-wrap label input {
+    display: none;
+}
+#bouquet-options-wrap fieldset {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#bouquet-options-wrap fieldset label {
+    padding: 15px 15px 10px;
+    cursor: pointer;
+}
+#bouquet-options-wrap fieldset label:hover {
+    background: rgb(21 12 46 / 7%);
+}
+#bouquet-options-wrap fieldset label.selected {
+    border: 2px dashed #3b2a71;
+}
+#bouquet-options-wrap label p {
+    margin: 0;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: #3b2a71;
+    margin-top: 5px;
+}
+#flower-gift-wrap {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 100ms linear !important;
+    -moz-transition: all 100ms linear !important;
+    -o-transition: all 100ms linear !important;
+    -ms-transition: all 100ms linear !important;
+    transition: all 100ms linear !important;
+    margin-bottom: 30px;
+
+}
+#flower-gift-wrap.bouquet-hide {
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 0;
+}
+/*#flower-gift-wrap {
+    display: block;
+}
+#flower-gift-wrap.bouquet-hide {
+    display: none;
+}*/
+.woocommerce-additional-fields {
+    /*display: block !important;*/
+}
+.bouquet-notice {
+    margin-bottom: 30px;
+}
+.bouquet-notice .bouquet-label {
+    color: #3b2a70;
+    font-family: Libre Baskerville;
+    font-weight: 500;
+    font-size: 18px;
+}
+.bouquet-notice .bouquet-instruction {
+    font-family: 'futura-pt';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #150C2E;
+    text-transform: uppercase;
+    line-height: 1.25;
+}
+.bouquet-notice .bouquet-instruction span {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #3b2a70;
+}
+#bouquet-options-wrap fieldset .swiper-slide img.thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+#flower-gift-wrap .swiper {
+  width: 1000px;
+}
+.bouquet-button-wrap {
+    margin-top: 15px;
+}
+.bouquet-button-wrap .swiper-button-disabled {
+    opacity: 0.5;
+}
+
+
+.img_zoomer_container {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    /*cursor: zoom-in;*/
+}
+.img_zoomer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+    z-index: -1;
+}
+#flower-gift-wrap label {
+    display: block;
+}
+p.bouquet-instruction {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #150c2e;
+}
+@media only screen and (min-width: 992px) {
+    #bouquet-options-wrap fieldset .swiper-slide img.thumbnail {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #flower-gift-wrap .swiper {
+        width: 950px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #flower-gift-wrap .swiper {
+        width: 768px;
+    }
+    #bouquet-options-wrap fieldset { margin-left: 0; }
+}
+@media only screen and (max-width: 991px) {
+    .img_zoomer_container { display: none; }
+}
+@media only screen and (max-width: 768px) {
+    #flower-gift-wrap .swiper {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #flower-gift-wrap .swiper {
+        width: 100%;
+    }
+    #bouquet-options-wrap fieldset label {
+        cursor: pointer;
+        max-width: calc(100% - 30px);
+        text-align: center;
+    }
+    #bouquet-options-wrap fieldset .swiper-slide {
+        width: 50% !important;
+    }
+}
